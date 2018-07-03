@@ -1,9 +1,6 @@
 ---
 title: Fuzzy Logic
-image:/images/fuzlog.png
-imageMeta:
-  attribution:
-  attributionLink:
+image: /images/fuzlog.png  
 featured: true
 author: carlos
 date: Tue Jul 03 2018 11:59:19 GMT+0100 (IST)

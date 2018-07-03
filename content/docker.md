@@ -1,9 +1,6 @@
 ---
 title: Docker
-image:/images/docker.png
-imageMeta:
-  attribution:
-  attributionLink:
+image: /images/docker.png  
 featured: true
 author: carlos
 date: Tue Jul 03 2018 10:11:45 GMT+0100 (IST)

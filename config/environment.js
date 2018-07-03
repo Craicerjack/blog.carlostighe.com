@@ -20,6 +20,16 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    blog: {
+      title: "From Out Of A Brown Paper Bag",
+      description: "Anything that pops into my mind",
+      // logo: "/images/thinker.png",
+      coverImage: "/images/thinker.png",
+      navigation: [
+        { label: 'Blog Home', route: 'index' },
+      ]
     }
   };
 

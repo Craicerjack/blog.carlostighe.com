@@ -1,7 +1,7 @@
 ---
 name: Carlos
 id: carlos
-image:
+image: /images/me.jpg
 cover:
 bio:
 website:

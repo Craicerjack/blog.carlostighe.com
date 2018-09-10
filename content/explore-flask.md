@@ -584,5 +584,83 @@ assets.register(bundles)
 ```
  * Flask-Assets combines your files in the order in which they are listed
  * Defining bundles in a dict to make it easier to register them  
- * uses [python webassets](https://webassets.readthedocs.io/en/latest/index.html)
+ * uses [python webassets](https://webassets.readthedocs.io/en/latest/index.html) 
+ * Since were registering our bundles in `util.assets` all we have to do is import that module in `__init__.py` after our app has been initialised  
+ * To use the bundles insert them into the base or layout template for that section.  
+
+```
+# myapp/__init__.py
+# [...] Initialize the app
+from .util import assets
+
+#########################################################
+templates/
+    home/
+        layout.html
+        index.html
+        about.html
+    admin/
+        layout.html
+        dash.html
+        stats.html
+
+#########################################################
+{# myapp/templates/admin/layout.html #}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% assets "admin_js" %}
+            <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+        {% endassets %}
+        {% assets "admin_css" %}
+            <link rel="stylesheet" href="{{ ASSET_URL }}" />
+        {% endassets %}
+    </head>
+    <body>
+    {% block body %}
+    {% endblock %}
+    </body>
+</html>
+```
+
+##### Using Filters
+We can use filters to pre-process our statci files. ie to minify or transpile them...  
+To use the filters, you need to install the packages. 
+
+```python
+# myapp/util/assets.py
+# [...]
+bundles = {
+    'home_js': Bundle(
+        'lib/jquery-1.10.2.js',
+        'js/home.js',
+        output='gen/home.js',
+        filters='jsmin'),
+
+    'home_css': Bundle(
+        'lib/reset.css',
+        'css/common.css',
+        'css/home.css',
+        output='gen/home.css',
+        filters='cssmin'),
+
+    'admin_js': Bundle(
+        'lib/jquery-1.10.2.js',
+        'lib/Chart.js',
+        'js/admin.js',
+        output='gen/admin.js',
+        filters='jsmin'),
+
+    'admin_css': Bundle(
+        'lib/reset.css',
+        'css/common.css',
+        'css/admin.css',
+        output='gen/admin.css',
+        filters='cssmin')
+}
+# [...]
+```
+
+
 #### 

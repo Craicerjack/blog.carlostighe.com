@@ -67,6 +67,7 @@ value assigned to them
  - `datalist`  
 
 **Input Types**  
+
  - `search`
  - `email`  
  - `url`  
@@ -182,12 +183,14 @@ since we define a perspective in it, it is not used widely. The skew property al
 exists but it is applicable only to the x axis and y axis. The skew property cannot be
 implemented on the z axis. We will now look at the preserve-3d feature.  
 `rotate(3D)`:
-    ```javascript    
+    ```    
     transform: rotateX(value);    
     transform: rotateY(value);    
     transform: rotateZ(value);     
     ```  
+      
 ---
+
 `preserve-3d`:  
 we use this so that parent transformations dont affect their children.  
 `.parent class {transform-style: preserve-3d;}`  

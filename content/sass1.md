@@ -34,7 +34,7 @@ You can nest properties under other properties `p { a {}}` becomes `p a {}`
 
 parent-selector can be used at any stage of the attribute.  
 
-```css  
+```  
 #demo {
     &-child { margin: .5em; }
     &child { margin: .5em; }

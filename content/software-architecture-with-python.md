@@ -86,4 +86,46 @@ with respect to its non-functional aspects"
      * Integrity, Origin, Authenticity  
  * Deployability  
      * Module Structures, production vs development environments, ecosystem supoprt, standardized configuration, standardized infrastructure, use of containers.
-gs
+
+## Writing Modifiable and Readable Code  
+
+##### Moifiability  
+> Modifiability is the degree of ease at which changes can be made to a system, and the flexibility with which the system adpats to such changes.  
+
+ * __Readability__: the ease with which a programs logic can be followed and understood. System should be well-written, well-documented, and well-formatted  
+     * __antipatterns__: very few comments or breaking best practices of the language, mixed indentation, mixed string literal types, overuse of functional constructs  
+     * __Techniques for readability__:
+         * document your code: inline, external docs, and user manuals    
+         * function doc strings  
+         * Class docstrings  
+         * Module docstrings  
+         * Use guidelines; PEP8  
+         * review and refactor code  
+         * Use comments that are helpful, not just repeating the obvious. Avoid inline comments  
+ * __Modularity__: written in well encapsualted modules, which do very specific well documented functions  
+ * __Reusability__: measures the number of parts of a software system that can be reused in other parts of the system with zero or little modification  
+ * __Maintainability__: ease with which the system can be updated and kept working in a useful state  
+
+###### Cohesion & Coupling  
+Cohesion - refers to how tightly the responsibilities of a module are related to each other. 
+Coupling - how related modules are to each other  
+Aim is for high cohesion and low coupling  
+
+__Provide Explicit Interfaces__: 
+ * a modules should mark a set of functions as the interface it provides to external code  
+ * Methods or fuctions which are internal to it, do not make up its API, should be explicitly made __private__ or should be documented as such   
+ * reduce two way dependencies  
+ * abstract common services  
+ * Using inheritance techniques  
+ * Use late binding techniques: plugin mechanisms (setting things at runtime rather than statically), registry lookup services, nontification service, deployment time binding, using creational patterns  
+
+ __TOOLS FOR STATIC ANALYSIS__:  
+  * Pylint  
+  * Pyflakes  
+  * McCabe  
+  * Pycodestyle  
+  * Flake8  
+
+
+## Testability Writing Testable Code  
+

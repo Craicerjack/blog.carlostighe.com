@@ -1,6 +1,6 @@
 ---
 title: Software Architecture With Python
-image: 
+image: /images/software_archi.png
 imageMeta:
   attribution:
   attributionLink:
@@ -128,4 +128,40 @@ __Provide Explicit Interfaces__:
 
 
 ## Testability Writing Testable Code  
+
+>The degree of ease with which a software system exposes its faults though execution based testing.  
+  
+__Functional testing__ - verifying a softwares functionality. 
+  * White-Box testing: Unit tests, integration test, system tests.  
+  * Black-Box testing: tests carried out by those not on the software team  
+__Performacne testing__ - testing a softwares responsiveness and robustness.  
+  * Load testing: how system performs under a specific load  
+  * Stress testing: response to immediate and growing load  
+  * Scalability testing: how system can scale to demand
+__Security testing__ - verify systems security, access rights, authorization etc  
+__Usability testing__ - group testing by sample test audience  
+__Installation testing__ - shipping and installing on site  
+__Accessibility testing__ - access for those with disabilities  
+
+##### Reduce system complexity
+
+Reduce coupling. Increase cohesion. Provide well defined interfaces. Reduce class complexity.  
+__Improve predictability__:
+  * Correct exception handling    
+  * Infinite loops or blocked wait  
+  * Time dependent logic  
+  * Concurrency
+  * Memory management
+
+Control and isolate external dependencies. - use local files instead of a db. Use in memory db. Use a test db.  
+Resource virtualization with:  
+ * Stubs - functions that mimic your real life funcs  
+ * Mocks - mocks the API  
+ * >The 
+ main difference between Mocks and Stubs is that a Stub implements
+just enough behavior for the object under test to execute the test. A Mock
+usually goes beyond by also verifying that the object under test calls
+the Mock as expected  
+ * Fakes - bit momre than stubbing  
+
 

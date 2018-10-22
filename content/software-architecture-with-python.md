@@ -165,3 +165,8 @@ the Mock as expected
  * Fakes - bit momre than stubbing  
 
 
+## Good Performance is Rewarding  
+
+##### Performance testing and Measurement  
+
+

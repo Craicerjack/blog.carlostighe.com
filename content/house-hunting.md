@@ -22,3 +22,6 @@ I took the day off work yesterday to view 6 houses in Galway County, has to be o
 Some fine houses, some beautiful houses, some old houses, some huge houses, but its not all down to the house. A house is much more than a house. Its a commute time, its isolation or a place with families, its small and central, or large and solitary, its a kitchen, and a bedroom, and storage for all the crap youve accumulated over the decades of your life, its a cycle home on a crappy winters evening, with driving wind and rain, and poor visibility, and roads with no room for cyclists, and drivers who couldnt care less about you, simply because you slow them down from their hugely important journeys. (hmm off track a bit...)
 
 
+The list of things Im watching; Impulse, The Flash, Survivor, The Expanse, Bosch, Ballers, The Good Place, The Gifted, among many others. Some are so much better than others and Im aware of how shit others are but hey, theyre watchable. 
+
+Thinking about all the things Id love to know in programming, American Politics, the state of Geo-politics, how people can be so shitty to each other, the selfishness of the majority of those who are well off. Donald Trump is a disgusting human being, and that there are so many that support him just trys my faith in humanity. 

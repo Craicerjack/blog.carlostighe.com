@@ -20,7 +20,13 @@ in config add to jinja environment variables
 define it in helpers.py
 
     def undefined_check(item, item_property):
-        return item[item_property] if item else ''
+        if item:
+            if item_property in ['start', 'end']:
+                prop = getattr(item, item_property)
+                return prop.strftime('%m/%Y')
+            return getattr(item, item_property)
+        else:
+            return ''
 
 Use it in template
 
